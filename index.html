@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl	text-center mt-10">Welcome Mahadir <span
+                class="font-semibold text-[#E14D2A] font-semibold ">Baper Bank !!</span></h1>
+    </header>
+    <main>
+        <section class=" mt-10 ">
+            <div class="mx-auto bg-[#001253] w-3/4 md:w-8/12 p-4 md:p-16 rounded">
+                <h2 class="text-white text-3xl font-semibold mb-3 ">Please Login </h2>
+                <div>
+                    <input class="mb-3 w-3/4 p-2 rounded" type="email" name="" id="enterEmail"
+                        placeholder="Enter Your Email" required>
+                    <br>
+                    <input class=" w-3/4 p-2 rounded" type="password" name="" id="enterPass"
+                        placeholder="Enter Your password" required>
+                    <br>
+                    <button id="loginSubmit"
+                        class=" text-white mt-3 bg-[#FD841F] px-5 py-2 rounded-md hover:bg-[#E14D2A]">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // step-1: Add Click Event Handler With The Submit Button
+        document.getElementById('loginSubmit').addEventListener('click', function () {
+            // Step-2: get the Email address inside the email input field
+            // Always remember to use .value to get text from an input field
+            const emailField = document.getElementById('enterEmail');
+            const email = emailField.value;
+            // step-3 : get password
+            const inputField = document.getElementById('enterPass');
+            const pass = inputField.value;
+            // step-4 Verify email and pass
+            // Danger : do not use on client site
+            if(email === 'mahadimyjaan@gmail.com' && pass === 'valarebo'){
+                window.location.href = 'bank.html'
+            }
+            else{
+                alert('Bujlam Na, Id PassWord Bhul oy kila ?')
+            }
+        })
+    </script>
+    <script src="JS/login.js"></script>
+</body>
+
+</html>

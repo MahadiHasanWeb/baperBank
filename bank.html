@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahadir Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl	text-center mt-6">Mahadir <span
+            class="font-semibold text-[#E14D2A] font-semibold ">Baper Bank !!</span></h1>
+    </header>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto w-3/4 mt-6 text-white">
+        <div class="col bg-[#3E6D9C] p-10 rounded-2xl ">
+            <h4 class="text-4xl font-medium mb-3">Deposit</h4>
+            <h4 class="text-4xl">$ <span class="text-4xl font-semibold">00</span></h4>
+        </div>
+        <div class="col  bg-[#FD841F] p-10 rounded-2xl">
+            <h4 class="text-4xl font-medium mb-3">Withdraw</h4>
+            <h4 class="text-4xl">$ <span class="text-4xl font-semibold">00</span></h4>
+        </div>
+        <div class="col bg-[#001253] p-10 rounded-2xl">
+            <h4 class="text-4xl font-medium mb-3">Balance</h4>
+            <h4 class="text-4xl">$ <span class="text-4xl font-semibold">00</span></h4>
+        </div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-2 mt-6  mx-auto gap-6 w-9/12">
+        <div class=" bg-[#001253] col p-10 rounded">
+            <h2 class="text-white text-3xl font-semibold mb-3 ">Please Deposit </h2>
+            <div>
+                <input class="mb-3 p-2 rounded w-4/5" type="text" name="" id="depositBox"
+                    placeholder="$ Amount You Want To Deposit" required>
+                <br>
+                <button
+                    class=" text-white mt-3 bg-[#FD841F] px-5 py-2 rounded-md hover:bg-[#E14D2A]">Deposit</button>
+            </div>
+        </div>
+        <div class="bg-[#001253] rounded col p-10">
+            <h2 class="text-white text-3xl font-semibold mb-3 ">Please Withdraw </h2>
+            <div>
+                <input class="mb-3 p-2 rounded w-4/5" type="text" name="" id="withdrawBox"
+                    placeholder="$ Amount You Want To Withdraw" required>
+                <br>
+                <button
+                    class=" text-white mt-3 bg-[#FD841F] px-5 py-2 rounded-md hover:bg-[#E14D2A]">Withdraw</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
